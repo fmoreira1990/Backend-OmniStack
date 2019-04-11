@@ -24,7 +24,7 @@ mongoose.connect(
 );
 
 app.use((req, res) => {
-  req.io = io
+  req.io = io;
 
   return next();
 })
